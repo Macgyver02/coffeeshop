@@ -1,0 +1,142 @@
+<!-- activity_main.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/numberOfCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="16dp"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@id/numberOfCoffee"
+        android:onClick="btnMinus"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/numberOfCoffee"
+        android:onClick="btnPlus"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberOfCoffee"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+
+    <CheckBox
+        android:id="@+id/mandaziCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bill"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:text="Mandazi" />
+
+    <CheckBox
+        android:id="@+id/kaimatiCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bill"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/mandaziCheckbox"
+        android:text="Kaimati" />
+
+    <CheckBox
+        android:id="@+id/chapatiCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapati"
+        android:layout_below="@id/mandaziCheckbox"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <CheckBox
+        android:id="@+id/ngumuCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mandaziCheckbox"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/chapatiCheckbox"
+        android:text="Ngumu" />
+
+    <CheckBox
+        android:id="@+id/kdfCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chapatiCheckbox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="KDF" />
+
+    <CheckBox
+        android:id="@+id/scornsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chapatiCheckbox"
+        android:layout_marginLeft="251dp"
+        android:layout_marginTop="16dp"
+        android:text="Scorns" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kdfCheckbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="btnOrder"
+        android:text="Order" />
+
+    <TextView
+        android:id="@+id/servingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bill"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp" />
+
+    </RelativeLayout>
+</ScrollView>
+
